@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(18, 167, 142);
+}
+section.container{
+    width: 23%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: -1px 0px 10px 13px rgb(0, 0, 0), 3px 0px 20px 3px rgb(0, 0, 0);
+    border-radius: 30px;
+}
+section.container::after{
+    content: "";
+    position: absolute;
+    background: black;
+    width: 65%;
+    height: 25px;
+    bottom: 97%;
+    left: 18%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+div.bg_img {
+    background-image: url(./2004100.jpg);
+    background-repeat: no-repeat;
+    width: 98%;
+    margin: auto;
+    height: 85vh; 
+    filter: blur(4px);
+    background-position: center; 
+    background-size: cover;
+    border-radius: 30px; 
+}
+div.profile{
+    position: absolute;
+    height: 117px;
+    width: 38%;
+    background: rgb(250, 128, 114);
+    left: 30%;
+    bottom: 72%;
+    border-radius: 50%;
+}
+div.app_name {
+    position: absolute;
+    bottom: 45%;
+    left: 14%;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: mediumvioletred;
+}
+div.app{
+    position: absolute;
+    bottom: 30%;
+    left: 55%;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: mediumvioletred;
+}
+div.form{
+    position: absolute;
+    bottom: 39%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+input[type="text"],input[type="password"]{
+    background: rgb(252, 249, 249);
+    text-align: center;
+    outline: transparent;
+    font-size: 1em;
+    width: 75%;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    box-shadow: -1px -4px 4px 5px rgb(151, 147, 147);
+    cursor: pointer;
+}
+input[type="text"]:active, input[type="password"]:active{
+    background: rgba(250, 128, 114, 0.329);
+    transform: translate(1px,-1px);
+}
+input[type="button"] {
+    text-transform: capitalize;
+    background: rgba(250, 128, 114, 0.774);
+    color: mediumvioletred;
+    outline: transparent;
+    border: 0px solid transparent;
+    padding: 10px;
+    margin: 5px;
+    width: 70%;
+    font-size: 1.3em;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background: rgb(250, 128, 114);
+    width: 30%;
+}
+input[type="button"]:active{
+    transform: translate(2px,-2px); 
+    background: white;
+}
+p#forget_pwd{
+    position: absolute;
+    text-transform: capitalize;
+    left: 10%;
+    cursor: pointer;
+}
+div.post{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 7%;
+    width: 100%;
+    height: 160px;
+}
+p.log_wth{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    color: maroon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+div.footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(5, 5, 5);
+    margin: auto;
+    padding: 8px;
+    width: 95%;
+    height: 45px;
+    bottom: 0;
+    border-bottom-right-radius: 27px;
+    border-bottom-left-radius: 27px;
+}
+div.footer span{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    width: 33.3%;
+    cursor: pointer;
+    color: white;
+}
